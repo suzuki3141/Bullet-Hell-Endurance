@@ -11,6 +11,7 @@ class bullet {
         bulletY.push(y);
         bulletdir.push(dir);
         bulletspeed.push(speed);
+        this.type = type;
         this.bulletnumber = bulletspeed.length;
     }
 }
