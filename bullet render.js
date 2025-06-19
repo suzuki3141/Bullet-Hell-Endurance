@@ -4,14 +4,18 @@ let bulletX = [];
 let bulletY = [];
 let bulletdir = [];
 let bulletspeed = [];
-class bullet {
-    constructor(type,x,y,dir,speed) {
+let bulletdraw = [];
+const straight = 1;
+function newbullet(type,x,y,dir,speed){
         bullettype.push(type);
         bulletX.push(x);
         bulletY.push(y);
         bulletdir.push(dir);
         bulletspeed.push(speed);
+        bulletdraw.push(true);
         this.type = type;
         this.bulletnumber = bulletspeed.length;
-    }
+}
+function bulletupdate(){
+    
 }
