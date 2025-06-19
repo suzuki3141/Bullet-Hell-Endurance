@@ -16,5 +16,12 @@ function newbullet(type,x,y,dir,speed){
         return bulletdraw.length;
 }
 function bulletupdate(){
-    
+for (let i = 0; i < bulletdraw.length; i++) {
+        switch(bullettype[i]){
+            case 1:
+                
+        }
+        
+}
+
 }
