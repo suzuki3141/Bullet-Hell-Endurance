@@ -16,12 +16,26 @@ function newbullet(type,x,y,dir,speed){
         return bulletdraw.length;
 }
 function bulletupdate(){
-for (let i = 0; i < bulletdraw.length; i++) {
-        switch(bullettype[i]){
-            case 1:
-                
+        for (let i = 0; i < bulletdraw.length + 1; i++) {
+                switch(bullettype[i]){
+                    case 1:
+                        let n = bulletdir / 180 * Math.PI;
+                        bulletX[i] += Math.cos(n * bulletspeed[i]);
+                        bulletY[i] += Math.sin(n * bulletspeed[i]);
+                        break;
+                }
         }
-        
 }
-
+function bulletrender(){
+        for(let i = 0; i < bulletdraw.length + 1; i++){
+                switch(bullettype[i]){
+                        case 1:
+                                render("./images/bullet/b1.png", bulletX[i], bulletY[i]);
+                                break;
+                }
+        }
+}
+function bulletprocess(){
+        bulletupdate();
+        bulletupdate();
 }
