@@ -13,8 +13,7 @@ function newbullet(type,x,y,dir,speed){
         bulletdir.push(dir);
         bulletspeed.push(speed);
         bulletdraw.push(true);
-        this.type = type;
-        this.bulletnumber = bulletspeed.length;
+        return bulletdraw.length;
 }
 function bulletupdate(){
     
