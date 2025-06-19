@@ -37,5 +37,5 @@ function bulletrender(){
 }
 function bulletprocess(){
         bulletupdate();
-        bulletupdate();
+        bulletrender();
 }
