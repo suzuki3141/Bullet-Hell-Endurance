@@ -166,7 +166,6 @@ function objectupdate(){
                 image.src = "./images/chara/Enemy.png";
                 ctx.drawImage(image, enemyX, enemyY);
             //弾幕描画
-                bulletprocess();
             //プレイヤー描画
                 var image = new Image();
                 image.src = "./images/chara/Player.png";
